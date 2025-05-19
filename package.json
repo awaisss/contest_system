@@ -1,0 +1,35 @@
+{
+  "name": "contest-participation-system",
+  "version": "1.0.0",
+  "description": "A role-based contest participation platform using Node.js, Express, and MySQL.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "seed": "mysql -u root -p contest_participation_db < contest_system_seed.sql"
+  },
+  "keywords": [
+    "contest",
+    "quiz",
+    "leaderboard",
+    "nodejs",
+    "mysql"
+  ],
+  "author": "Ovais Ilyas",
+  "license": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.4.2",
+    "sequelize": "^6.32.1",
+    "rate-limiter-flexible": "^7.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
